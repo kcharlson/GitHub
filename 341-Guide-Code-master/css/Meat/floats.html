@@ -1,0 +1,78 @@
+---
+layout: meat
+title: floats
+sectionNumber: '05'
+---
+
+<article>
+
+    <div class="meat_p first active" data-content="sectionOne">
+        <p>The float property is a valuable and powerful asset to any web designer/developer working with HTML and CSS. Tragically, it can also cause frustration and confusion if you don’t fully understand how it works.</p>
+        <p>We see floats in the print world every time we pick up a magazine article with an image on the left or right with text flowing nicely around it. In the world of HTML/CSS, the text will wrap around an image with the float property applied to it, much like in a magazine layout. Images are just one of the many use cases for the float property: we can also achieve the popular two-column layout using floats. In fact, you can float just about any element in your HTML. By learning and understanding float property basics, along with position property basics, you will be able to achieve any layout with confidence.</p>
+    </div>
+
+
+    <div class="meat_p second" data-content="sectionSecond">
+        <p>The float property has four values that we can apply to it: left, right, inherit, and none. Each value is pretty self-explanatory. For example, if you assign float: left to an element, it will move to the left side of its parent element. The same idea applies if you were to assign float: right; to an element. That element would be sent off to the right-most boundary of its parent element. The inherit value tells an element to inherit the float value of its parent element. The value none is the default value and tells an element not to float at all.</p>
+    </div>
+
+
+    <div class="meat_p third" data-content="sectionThird">
+        <p>The clear property is directly related to floats. If the element can fit horizontally in the space next to another element which is floated, it will, unless you apply clear to that element in the same direction as the float. Then the element will move down below the floated element. The clear property has three values: left, right and both. Again, the first two values are pretty self-explanatory. The “both” value clears elements on both the left and right side, ensuring no floats can influence the element you are styling. The both value is the most commonly used. </p>
+    </div>
+
+
+
+    <div class="mini-nav">
+            <div class="mini-circle" data-content-target="sectionOne"><div class="active_circle"></div></div>
+            <div class="mini-circle" data-content-target="sectionSecond"></div>
+            <div class="mini-circle" data-content-target="sectionThird"></div>
+    </div>
+
+</article>
+
+<!--Links-------------------------------------------------------------->
+
+<div class="links_group">
+  <h4>Useful Links</h4>
+
+    <div class="links first active" data-content="sectionOne">
+        <div class="link"><a href="https://css-tricks.com/all-about-floats/" target="_blank"></a><img src="/Images/css_tricks.png"></div>
+        <div class="link"><a href="http://learnlayout.com/float-layout.html" target="_blank"></a><img src="/Images/learn_layout.png"></div>
+        <div class="link"><a href="https://codepen.io/devtips/pen/gbVXMP" target="_blank"><img src="/Images/codepen.png"></a></div>
+    </div>
+
+    <div class="links second" data-content="sectionSecond">
+        <div class="link"><a href="https://css-tricks.com/all-about-floats/" target="_blank"></a><img src="/Images/css_tricks.png"></div>
+        <div class="link"><a href="http://learnlayout.com/float-layout.html" target="_blank"></a><img src="/Images/learn_layout.png"></div>
+        <div class="link"><a href="https://codepen.io/devtips/pen/gbVXMP" target="_blank"><img src="/Images/codepen.png"></a></div>
+    </div>
+
+
+    <div class="links third" data-content="sectionThird">
+        <div class="link"><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear" target="_blank"><img src="/Images/w3.png"></a></div>
+        <div class="link"><a href="http://learnlayout.com/clear.html" target="_blank"><img src="/Images/learn_layout.png"></a></div>
+        <div class="link"><a href="https://stackoverflow.com/questions/12871710/what-does-the-css-rule-clear-both-do" target="_blank"><img src="/Images/stack.png"></a></div>
+        <div class="link"><a href="https://css-tricks.com/almanac/properties/c/clear/" target="_blank"><img src="/Images/css_tricks.png"></a></div>
+
+    </div>
+
+</div>
+
+
+<!--Right Side Code-------------------------------------------------------------->
+
+{% contentfor right %}
+
+<div class="right css">
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/xara4Z1b18I?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<a href="{{ site.baseurl }}/css/Meat/flexbox.html">
+    <div class="next_section_meat" id="css">
+        <p>Next Section: Flex Box</p> <img class="arrow" src="/Images/Asset%201.svg">
+    </div>
+</a>
+
+
+{% endcontentfor %}

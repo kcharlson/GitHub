@@ -1,0 +1,176 @@
+---
+layout: meat
+title: the div
+sectionNumber: '03'
+---
+
+<article>
+
+<div class="meat_p first active" data-content="sectionOne">
+    <p>The div tag is used for defining a section of your document. With the div tag, you can group sections of your HTML elements together and format them with CSS. This is similar to when you group objects within illustrator. Divs helps simplify layouts. How? By allowing you to keep relative and like objects together while positioning items, and will help later when you are focusing on creating classes and styling elements within these groups. We will talk about that later though. </p>
+    <p>To help visualize this idea, I have created two divs on the right. Just like the <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> tags the <code>&lt;div&gt;</code> tag has opening and closing tags that wrap around content. The content inside the divs is now considered grouped together by a “parent element.” </p>
+</div>
+
+
+<div class="meat_p second" data-content="sectionSecond">
+    <p>“Div” is such a vague term, and when you have multiple divs (trust me you will), it’s nice to be able to label your divs with specific titles by using ID’s or classes. Now, wait, what’s an ID? What’s a Class? </p>
+    <p>The role of an ID is to specify a unique element within an HTML document, hints the word unique. To use an ID you must understand these rules: Must contain at least one character, must not contain any space characters, all values are case-insensitive, and can not be repeated. Once you use an ID on an element once, you can never use that name again. The ID is uniquely connected with that element.</p>
+    <p>Classes work in the more global sense. They can be reused over and over again throughout the document. </p>
+    <p>As shown on the right, I have added a class of “div2” to the bottom div. </p>
+</div>
+
+
+<div class="meat_p third" data-content="sectionThird">
+    <p>It’s important to note that you can have divs at multiple levels or divs within divs. This can get confusing quickly if you don't structure your code the right way. It can quickly be hard to read, that’s why I highly recommend intending.</p>
+    <p>What we have is three divs to the right. The top one is unchanged, but the bottom one (”div2”) now has a div within itself. I’ve also added an ID to the div inside “div2” as an example of the use of an ID. So what does that mean? Well... at the basic level, you have a group within a group. At the moment the use of layering div may not seem useful, but it will be a real skill to reference when working with CSS.</p>
+</div>
+
+
+<div class="mini-nav">
+            <div class="mini-circle" data-content-target="sectionOne"><div class="active_circle"></div></div>
+            <div class="mini-circle" data-content-target="sectionSecond"></div>
+            <div class="mini-circle" data-content-target="sectionThird"></div>
+</div>
+
+
+</article>
+
+<!--Links-------------------------------------------------------------->
+<div class="links_group">
+  <h4>Useful Links</h4>
+
+    <div class="links first active" data-content="sectionOne">
+        <div class="link"><a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank"><img src="/Images/w3.png" alt="w3schools logo"></a></div>
+        <div class="link"><a href="https://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html" target="_blank"><img src="/Images/stack.png" alt="stack overflow logo"></a></div>
+        <div class="link"><a href="http://htmldog.com/guides/html/intermediate/spandiv/" target="_blank"><img src="/Images/code_dog.png" alt="html dog logo"></a></div>
+    </div>
+
+    <div class="links second" data-content="sectionSecond">
+        <div class="link"><a href="https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/" target="_blank"><img src="/Images/css_tricks.png" alt="css-tricks logo"></a></div>
+        <div class="link"><a href="#" target="_blank"></a></div>
+    </div>
+
+    <div class="links three" data-content="sectionThird">
+        <div class="link"><a href="https://css-tricks.com/what-beautiful-html-code-looks-like/" target="_blank"><img src="/Images/css_tricks.png" alt="css-tricks logo"></a></div>
+        <div class="link"><a href="https://www.codecademy.com/courses/learn-html-css/lessons/structure/exercises/what-is-html?action=lesson_resume" target="_blank"><img src="/Images/codecademy.png" alt="css-tricks logo"></a></div>
+    </div>
+
+</div>
+
+<!--Right Side Code-------------------------------------------------------------->
+
+{% contentfor right %}
+
+<div class="right html">
+
+    <div class="code code_code active" data-content="sectionOne">
+
+       <code class="active_code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;body&gt;<br><br>
+                <div class="code_boarder">
+                    &lt;div&gt;<br>
+                    <div class="indent">&lt;h1&gt;hi&lt;/h1&gt;<br></div>
+                    <div class="indent">&lt;p&gt; Hi there! Thanks for stopping by! &lt;/p&gt;<br></div>
+                    &lt;/div&gt;<br>
+                </div>
+
+               <div class="code_boarder">
+                    &lt;div&gt;<br>
+                   <div class="indent">&lt;h1&gt;hi&lt;/h1&gt;<br></div>
+                   <div class="indent">&lt;p&gt; Hi there! Thanks for stopping by! &lt;/p&gt;<br></div>
+                    &lt;/div&gt;<br>
+               </div>
+
+            &lt;/body&gt;<br>
+
+            &lt;/html&gt;
+        </code>
+
+    </div>
+
+
+
+
+    <div class="code code_code" data-content="sectionSecond">
+       <code class="deactive_code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+       </code>
+
+       <code class="active_code">
+             &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+
+            &lt;body&gt;<br>
+                <div class="code_boarder">
+                    &lt;div&gt;<br>
+                    <div class="indent">&lt;h1&gt;hi&lt;/h1&gt;<br></div>
+                    <div class="indent">&lt;p&gt; Hi there! Thanks for stopping by! &lt;/p&gt;<br></div>
+                    &lt;/div&gt;<br>
+                </div>
+
+               <div class="code_boarder">
+                    &lt;div class="div2"&gt;<br>
+                   <div class="indent">&lt;h1&gt;hi&lt;/h1&gt;<br></div>
+                   <div class="indent">&lt;p&gt; Hi there! Thanks for stopping by! &lt;/p&gt;<br></div>
+                    &lt;/div&gt;<br>
+               </div>
+        </code>
+        <code class="deactive_code">
+
+            &lt;/body&gt;<br>
+
+            &lt;/html&gt;<br>
+        </code>
+
+    </div>
+
+    <div class="code code_code" data-content="sectionThird">
+       <code class="deactive_code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+       </code>
+
+       <code class="active_code">
+             &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+
+            &lt;body&gt;<br>
+                <div class="code_boarder">
+                    &lt;div&gt;<br>
+                    <div class="indent">&lt;h1&gt;hi&lt;/h1&gt;<br></div>
+                    <div class="indent">&lt;p&gt; Hi there! Thanks for stopping by! &lt;/p&gt;<br></div>
+                    <div class="indent">
+                        &lt;div&gt;<br>
+                       <div class="indent">&lt;h1&gt;hi&lt;/h1&gt;<br></div>
+                       <div class="indent">&lt;p&gt; Hi there! Thanks for stopping by! &lt;/p&gt;<br></div>
+                        &lt;/div&gt;<br>
+                   </div>
+
+                    &lt;/div&gt;<br>
+                </div>
+
+
+        </code>
+        <code class="deactive_code">
+
+            &lt;/body&gt;<br>
+
+            &lt;/html&gt;<br>
+        </code>
+
+    </div>
+
+    <a href="{{ site.baseurl }}/css/intro.html">
+    <div class="next_section_meat" id="html">
+        <p>Next Unit: CSS</p> <img class="arrow" src="/Images/Asset%201.svg"> </div>
+    </a>
+
+
+
+</div>
+
+
+{% endcontentfor %}

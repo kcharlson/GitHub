@@ -1,0 +1,63 @@
+---
+layout: meat
+title: Money ($)
+sectionNumber: '02'
+---
+
+
+<article>
+
+    <div class="meat_p first active" data-content="sectionOne">
+        <p>The money symbol ($) is the key for all this to work. For the browser to understand what you are trying to do, it needs the $, plus a CSS selector (class or ID) in parentheses and quotes (single or double will both work). This combation turns the CSS element into a jQuery element, and allows it to be combined with functions and actions.  </p>
+
+    </div>
+
+</article>
+
+<!--Links-------------------------------------------------------------->
+
+ <div class="links_group">
+  <h4>Useful Links</h4>
+
+    <div class="links first active" data-content="sectionOne">
+        <div class="link"><a href="https://learn.jquery.com/about-jquery/how-jquery-works/" target="_blank"><img src="/Images/w3.png" alt="learn jquery logo"></a></div>
+        <div class="link"><a href="https://stackoverflow.com/questions/28440203/where-do-i-write-and-link-jquery" target="_blank"><img src="/Images/stack.png" alt="stack overflow logo"></a></div>
+        <div class="link"><a href="https://medium.com/coding-design/how-can-you-write-better-in-jquery-69788663201e" target="_blank"><img src="/Images/medium.png" alt="medium logo"></a></div>
+    </div>
+
+</div>
+
+<!--Right Side Code-------------------------------------------------------------->
+
+{% contentfor right %}
+
+<div class="right jquery">
+    <div class="code first active" data-content="sectionOne">
+        <h4>Basic event structure</h4>
+       <code class="active_code">
+            $('selector, class or id').event();<br><br>
+           <p>without the "$" symbol, the browser with not understand that you are trying to create/use a jQuery action. Note you must put your selector within a pair of quotes.</p>
+       </code>
+        <br>
+       <code class="active_code">
+            $('button').fadeIn('fast');<br><br>
+           <p>In this example, the selector is a button element. The fadeIn event has been attached, witch means when the pages loads, the element will fade-in the hidden element.</p>
+       </code>
+       <br>
+       <code class="active_code">
+            $('.code').css("background-color","#232323");<br><br>
+           <p>In this example, the selector is a element with the class of '.code'. The CSS event has been attached, this will change the element's background color to #232323 by creating a inline style within the element's html code.</p>
+       </code>
+
+    </div>
+
+     <a href="{{ site.baseurl }}/jquery/meat/Basic_Events.html">
+        <div class="next_section_meat" id="jq">
+            <p>Next Section: Basic Events</p> <img class="arrow" src="/Images/Asset%201.svg">
+        </div>
+    </a>
+
+
+</div>
+
+{% endcontentfor %}

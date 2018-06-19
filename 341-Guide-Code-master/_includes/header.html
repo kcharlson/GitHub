@@ -1,0 +1,75 @@
+<header class="site-header" role="banner">
+{% assign current = page.url | downcase | split: '/' %}
+
+  <div class="wrapper_nav">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+      <a href="{{ site.baseurl }}"><h1>341</h1></a>
+
+    {% if page_paths %}
+    <nav class="main">
+        <span id="html" {% if current[1] == "html" %}class="nav active html"{% else %}class="nav"{% endif %}><span class="nav_code">&lt;/&gt;</span><br>HTML</span>
+        <span id="css" {% if current[1] == "css" %}class="nav active css"{% else %}class="nav"{% endif %}><span class="nav_code">.{}</span><br>CSS</span>
+        <span id="jq" {% if current[1] == "jquery" %}class="nav active jq"{% else %}class="nav"{% endif %}><span class="nav_code">$()</span><br>jQuery</span>
+        <span id="dc" {% if current[1] == "dc" %}class="nav active dc"{% else %}class="nav"{% endif %}><span class="nav_code">!?!</span><br>Damage Control</span>
+    </nav>
+    {% endif %}
+  </div>
+
+  <nav class="sub html">
+        <div class="cross">X</div>
+        <h5>HTML</h5>
+        <p>The most basic building block of the Web. </p>
+        <hr>
+        <a {% if page.url == "/HTML/Intro.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/HTML/Intro.html">Intro</a>
+        <a {% if page.url == "/HTML/Meat/Structure.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/HTML/Meat/Structure.html">Structure</a>
+        <a {% if page.url == "/HTML/Meat/The_div.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/HTML/Meat/The_div.html">The Div</a>
+    </nav>
+
+
+    <nav class="sub css">
+        <div class="sub_nav_content">
+            <div class="cross">X</div>
+            <h5>CSS</h5>
+            <p>Describes how HTML elements are to be displayed (AKA the Design Elements)</p>
+            <hr>
+            <a {% if page.url == "/css/intro.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/css/intro.html">Intro</a>
+            <a {% if page.url == "/css/Meat/class.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/css/Meat/class.html">Classes vs ID’s</a>
+            <a {% if page.url == "/css/Meat/Box_model.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/css/Meat/Box_model.html">Box Model</a>
+            <a {% if page.url == "/css/Meat/Positioning.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/css/Meat/Positioning.html">Positioning</a>
+            <a {% if page.url == "/css/Meat/floats.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/css/Meat/floats.html">Floats</a>
+            <a {% if page.url == "/css/Meat/flexbox.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/css/Meat/flexbox.html">Flexbox</a>
+        </div>
+    </nav>
+
+
+    <nav class="sub jquery">
+         <div class="sub_nav_content">
+            <div class="cross">X</div>
+            <h5>jQuery</h5>
+            <p>A fast, small, and feature-rich JavaScript library</p>
+            <hr>
+            <a {% if page.url == "/jquery/intro.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/jquery/intro.html">Intro</a>
+            <a {% if page.url == "/jquery/meat/Money_($).html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/jquery/meat/Money_($).html">Money ($)</a>
+            <a {% if page.url == "/jquery/meat/Basic_Events.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/jquery/meat/Basic_Events.html">Basic Events</a>
+            <a {% if page.url == "/jquery/meat/jQuery_and_Beyond.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/jquery/meat/jQuery_and_Beyond.html" class="twoline">jQuery and Beyond</a>
+        </div>
+    </nav>
+
+    <nav class="sub dc">
+        <div class="sub_nav_content">
+            <div class="cross">X</div>
+            <h5>Damage Control</h5>
+            <p>For when everything<br>goes wrong</p>
+            <hr>
+            <a {% if page.url == "/DC/intro.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/DC/intro.html">Intro</a>
+            <a {% if page.url == "/DC/Meat/AskingforHelp.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/DC/Meat/AskingforHelp.html" class="twoline">Asking for Help</a>
+            <a {% if page.url == "/DC/Meat/The_inspector.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/DC/Meat/The_inspector.html">The Inspector</a>
+            <a {% if page.url == "/DC/Meat/google.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/DC/Meat/google.html">Google</a>
+            <a {% if page.url == "/DC/Meat/resources.html" %}class="active_sub"{% endif %} href="{{ site.baseurl }}/DC/Meat/resources.html">Resources</a>
+        </div>
+    </nav>
+
+
+
+</header>

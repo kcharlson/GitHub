@@ -1,0 +1,68 @@
+---
+layout: meat
+title: flexbox
+sectionNumber: '06'
+---
+
+<article>
+
+    <div class="meat_p first active" data-content="sectionOne">
+        <p>When trying to design a response layout, you must think about how your content boxes will change and react to the page adjustments. Honestly, you can figure out those logistics on your own, but that takes time, sometimes time and energy you don’t have at the moment. Plus, why work hard, when you can work smart! This is where flexbox comes into play. It’s time to start thinking about flexible layouts!</p>
+    </div>
+
+
+    <div class="meat_p second" data-content="sectionSecond">
+        <p>The defining aspect of the flex layout is the ability to alter its items' width and height to best fit in the available space on any display device. A flex container expands items to fill available free space or shrinks them to prevent overflow. Nice, right? This allows you to be predictable and flexible layouts for desktop, tablet, and the mobile web. Check out the links below to see flexbox in action. </p>
+    </div>
+
+
+    <div class="mini-nav">
+            <div class="mini-circle" data-content-target="sectionOne"><div class="active_circle"></div></div>
+            <div class="mini-circle" data-content-target="sectionSecond"></div>
+    </div>
+
+</article>
+
+
+<!--Links-------------------------------------------------------------->
+
+<div class="links_group">
+  <h4>Useful Links</h4>
+
+    <div class="links first active" data-content="sectionOne">
+        <div class="link"><a href="https://cvan.io/flexboxin5/" target="_blank"><img src="/Images/flexbox-01.png" alt="cvan"></a></div>
+        <div class="link"><a href="https://medium.com/learning-new-stuff/learn-css-flexbox-in-3-minutes-c616c7070672" target="_blank"><img src="/Images/medium.png" alt="medium logo"></a></div>
+        <div class="link"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><img src="/Images/css_tricks.png" alt="css tricks logo"></a></div>
+    </div>
+
+
+    <div class="links second" data-content="sectionSecond">
+        <div class="link"><a href="http://flexboxfroggy.com/" target="_blank"><img src="/Images/froggy-01.png" alt="flexbox froggy"></a></div>
+        <div class="link"><a href="http://learnlayout.com/flexbox.html" target="_blank"><img src="/Images/learn_layout.png" alt="medium logo"></a></div>
+        <div class="link"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><img src="/Images/css_tricks.png" alt="css tricks logo"></a></div>
+    </div>
+
+</div>
+
+
+<!--Right Side Code-------------------------------------------------------------->
+{% contentfor right %}
+
+<div class="right css">
+        <div class="code first active" data-content="sectionOne">
+            <img class="flexbox" src="/Images/flexbox.gif">
+        </div>
+
+        <div class="code second" data-content="sectionSecond">
+            <img class="flexbox" src="/Images/flexbox.gif">
+        </div>
+
+        <a href="{{ site.baseurl }}/jquery/intro.html">
+                <div class="next_section_meat" id="css">
+                    <p>Next Unit: jQuery</p> <img class="arrow" src="/Images/Asset%201.svg">
+                </div>
+        </a>
+
+</div>
+
+{% endcontentfor %}

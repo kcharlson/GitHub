@@ -1,0 +1,35 @@
+---
+layout: meat
+title: jQuery and Beyond
+sectionNumber: '04'
+---
+
+<article>
+
+   <div class="meat_p first active">
+    <p>jQuery is just the tip of the iceberg when it comes to adding functionality to your website based on a user’s input. While working with jQuery you must consider the fact that jQuery is merely a library within a bigger system known as Javascript (not to mixed up with Java). There’s a whole world out there of various possibilities as you expand out past the basics which will always for more flexibility, deeper functionality and the ability to create cooler shit. You find out more about Javascript down below.</p>
+</div>
+
+</article>
+
+<!--Links-------------------------------------------------------------->
+<div class="links_group">
+  <h4>Useful Links</h4>
+
+    <div class="links first active" data-content="sectionOne">
+        <div class="link"><a href="https://www.codecademy.com/en/forum_questions/547a7e0e282ae33dda006496" target="_blank"><img src="/Images/codecademy.png" alt="codeacademy logo"></a></div>
+        <div class="link"><a href="https://www.codecademy.com/courses/getting-started-v2/0/1?curriculum_id=506324b3a7dffd00020bf661" target="_blank"><img src="/Images/codecademy.png" alt="codeacademy logo"></a></div>
+        <div class="link"><a href="https://www.w3schools.com/js/" target="_blank"><img src="/Images/w3.png" alt="w3schools logo"></a></div>
+    </div>
+</div>
+
+<!--Right Side Code-------------------------------------------------------------->
+
+{% contentfor right %}
+<a href="{{ site.baseurl }}/DC/intro.html">
+                <div class="next_section_meat">
+                    <p>Next Unit: Damage Control</p> <img class="arrow" src="/Images/Asset%201.svg">
+                </div>
+        </a>
+
+{% endcontentfor %}

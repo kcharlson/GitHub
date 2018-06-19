@@ -1,0 +1,53 @@
+---
+layout: meat
+title: Google
+sectionNumber: '04'
+---
+
+<article>
+    <div class="meat_p first active" data-content="sectionOne">
+        <p>Google is a modern developer's best friend. You can search for anything you can think of, or what want to find and typically find your answer thanks to Google. Also, in times of crisis is it can help you find the answers you need. Just like any tool though, you need to understand how to use it to be able to use it to it’s fullest potential. </p><br>
+        <p>Obviously, everyone has used Google in some shape or form to conduct research; It’s not rocket science. Though there are some good tricks and tips to consider when googling developer based topics.</p><br><br>
+    </div>
+
+    <div class="meat_p" data-content="sectionSecond">
+        <br>
+        <strong>1. Try to be as specific as possible</strong><br>
+        <p>Rather than just using key terms (like class and div) considering phrasing your question as though you were asking for help from a professor. For example, typing:”how do I add a class to a Div?” will give you better and more direct answers that way.</p><br>
+        <strong>2. Think outside the box</strong><br>
+        <p>Sometimes you need consider phrasing your question differently. Consider this, are you using the correct terms? Are you including what syntax/programming language (HTML, CSS, jQuery, JS) you are looking for in your question? Is your question to complex? What is the core concept of your question (aka, what are you trying to do)? </p><br>
+        <strong>3. Always check the date</strong><br>
+        <p>Some resources can be outdated or use outdated methods. If you have any questions about how current something is, feel free to ask! Or double check by referencing with other sources. </p>
+
+    </div>
+
+    <div class="mini-nav">
+            <div class="mini-circle" data-content-target="sectionOne"><div class="active_circle"></div></div>
+            <div class="mini-circle" data-content-target="sectionSecond"></div>
+    </div>
+</article>
+
+<!--Links-------------------------------------------------------------->
+<div class="links_group">
+  <h4>Useful Links</h4>
+
+
+    <div class="links first active">
+
+    </div>
+
+</div>
+
+
+<!--Right Side Code-------------------------------------------------------------->
+
+{% contentfor right %}
+
+<a href="{{ site.baseurl }}/DC/Meat/resources.html">
+                <div class="next_section_meat" id="dc">
+                    <p>Next Section: Resources</p> <img class="arrow" src="/Images/Asset%201.svg">
+                </div>
+        </a>
+
+
+{% endcontentfor %}

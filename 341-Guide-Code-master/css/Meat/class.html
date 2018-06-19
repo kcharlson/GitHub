@@ -1,0 +1,187 @@
+---
+layout: meat
+title: classes vs ID's
+sectionNumber: '02'
+---
+<!--Content-------------------------------------------------------------->
+
+<article>
+
+    <div class="meat_p first active" data-content="sectionOne">
+        <p>CSS sounds kind of cool right? It where the design becomes a reality in web design, and it can be a lot of fun too. So the first question is, how do you style elements? CSS relays on targeting elements, so it knows what you are trying to design, and this targeting process starts with using classes and ID’s.</p>
+        <p>First, to clarify, classes and ID’s serve the same purpose. Both tools are known as selectors, which gives elements a specified attribute that can be targetted in your CSS style sheet. Though they share a singular purpose, they operate under a different set of rules. Let’s see what those differences are. </p>
+    </div>
+
+
+    <div class="meat_p second" data-content="sectionSecond">
+        <p>Classes are “an identifier that can annotate multiple elements in a document.” In other words, you can use a class multiple times within document, to style various elements, under the same set of rules. Cool, right? Again it goes back to the idea of paragraph styles. Say if you have five items that you want to design the same way, you will use the same class title on all five of those <code>&lt;p&gt;</code> tags. </p>
+        <p>Adding a class to an element is pretty straightforward and fast and can be applied to nearly anything in your HTML document. All you have to do is add class=”______”  to your element. So for example, adding a class to a <code>&lt;p&gt;</code> would look like this <code>&lt;p class=”class1”&gt;...&lt;/p&gt;</code> note, I didn’t have to put the class style in the closing tag. When you add a class, you only have to do it in the beginning.  </p>
+    </div>
+
+
+    <div class="meat_p third" data-content="sectionThird">
+        <p>ID’s are “an identifier unique within the document,” hints the word unique. ID’s can only be used once in a single HTML document. If you try to use it a second time, Brackets (or whatever program you are using) will give you an error. For this reason, it’s common to see developers and designers utilizing classes vs. ID’s in most situations.</p>
+    </div>
+
+
+    <div class="meat_p fourth" data-content="sectionFourth">
+        <p>Now that you know what classes and ID’s are, how do you select them? Again, a simple process by using selectors. </p>
+        <p>Classes are defined by using a period and then placing the class name next to it. For example, if I wanted to select the class of “class1” in my CSS, I would do it by typing <code>.class1{...}</code>. ID’s work in a similar fashion but are rather defined by using the pound sign (#) instead of a period.</p>
+        <p>Note, selecting elements is case sensitive. If the case is not the same, your browser will be unable to match the class and the style together. This just leads to headaches and rough times. </p>
+
+        <a href="{{ site.baseurl }}/css/Meat/Box_model.html">
+                <div class="next_section">
+                    <p>Next Section: The Box Model</p> <img class="arrow" src="/Images/Asset%201.svg">
+                </div>
+        </a>
+
+    </div>
+
+
+    <div class="mini-nav">
+            <div class="mini-circle" data-content-target="sectionOne"><div class="active_circle"></div></div>
+            <div class="mini-circle" data-content-target="sectionSecond"></div>
+            <div class="mini-circle" data-content-target="sectionThird"></div>
+            <div class="mini-circle" data-content-target="sectionFourth"></div>
+    </div>
+
+</article>
+
+
+<!--Links-------------------------------------------------------------->
+
+<div class="links_group">
+  <h4>Useful Links</h4>
+
+    <div class="links first active" data-content="sectionOne">
+        <div class="link"><a href="http://www.cheetyr.com/css-selectors" target="_blank"><img src="/Images/cheetyr.png" alt="cheetry logo"></a></div>
+        <div class="link"><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank"><img src="/Images/w3.png" alt="w3school logo"></a></div>
+        <div class="link"><a href="http://www.htmldog.com/guides/css/intermediate/classid/" target="_blank"><img src="/Images/code_dog.png" alt="htmldog logo"></a></div>
+        <div class="link"><a href="https://www.sitepoint.com/web-foundations/css-selectors/" target="_blank"><img src="/Images/sitepoint.png" alt="sitepoint logo"></a></div>
+    </div>
+
+
+    <div class="links second" data-content="sectionSecond">
+        <div class="link"><a href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank"><img src="/Images/css_tricks.png" alt="css tricks logo"></a></div>
+        <div class="link"><a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank"><img src="/Images/w3.png" alt="w3school logo"></a></div>
+    </div>
+
+    <div class="links third" data-content="sectionThird">
+        <div class="link"><a href="https://css-tricks.com/almanac/selectors/i/id/" target="_blank"><img src="/Images/css_tricks.png" alt="css tricks logo"></a></div>
+        <div class="link"><a href="https://www.w3schools.com/cssref/sel_id.asp" target="_blank"><img src="/Images/w3.png" alt="w3school logo"></a></div>
+    </div>
+
+    <div class="links fourth" data-content="sectionFourth">
+        <div class="link"><a href="https://www.sitepoint.com/web-foundations/css-selectors/" target="_blank"><img src="/Images/sitepoint.png" alt="sitepoint logo"></a></div>
+        <div class="link"><a href="https://css-tricks.com/how-css-selectors-work/" target="_blank"><img src="/Images/css_tricks.png" alt="css tricks logo"></a></div>
+    </div>
+
+</div>
+
+
+
+<!--Right Side Code-------------------------------------------------------------->
+{% contentfor right %}
+
+<div class="right css">
+
+
+        <div class="code code_code active" data-content="sectionOne">
+           <code class="active_code">
+                    &lt;html&gt;<br>
+
+                    &lt;head&gt;...&lt;/head&gt;<br>
+
+                    &lt;body&gt;<br>
+                       <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+                       <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+                       <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+                       <div class="indent">&lt;div id = “unique”&gt;&lt;/div&gt;<br></div>
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+            </code>
+
+        </div>
+
+        <div class="code code_code" data-content="sectionSecond">
+           <code class="active_code">
+                    &lt;html&gt;
+
+                    &lt;head&gt;...&lt;/head&gt;
+
+                    &lt;body&gt;
+               <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+               <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+               <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+            </code>
+            <code class="deactive_code">
+                    <div class="indent">&lt;div id = “unique”&gt;&lt;/div&gt;<br></div>
+            </code>
+            <code class="active_code">
+                    &lt;/body&gt;<br>
+
+                    &lt;/html&gt;<br>
+            </code>
+
+        </div>
+
+
+        <div class="code code_code" data-content="sectionThird">
+           <code class="deactive_code">
+                    &lt;html&gt;<br>
+
+                    &lt;head&gt;...&lt;/head&gt;<br>
+
+                    &lt;body&gt;<br>
+                       <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+                       <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+                       <div class="indent">&lt;div class = “class”&gt;&lt;/div&gt;<br></div>
+            </code>
+            <code class="active_code">
+                <div class="indent">&lt;div id=“unique”&gt;&lt;/div&gt;<br></div>
+            </code>
+            <code class="deactive_code">
+                    &lt;/body&gt;<br>
+
+                    &lt;/html&gt;<br>
+            </code>
+
+        </div>
+
+
+        <div class="code code_code" data-content="sectionFourth">
+           <code class="active_code"><br>
+               <p class="full"> This code would be found within your style sheet:</p>
+                  <div class="indent">
+                     .class{<br>
+                      <div class="indent">
+                        font-family: roboto;<br>
+                        color: #232323;<br>
+                        type-size: 14px;<br>
+                      </div>
+                    }<br><br>
+
+                    #unique{
+                       <div class="indent">
+                            font-family: roboto;<br>
+                            color: #232323;<br>
+                            type-size: 14px;<br>
+                      </div>
+                    }
+               </div>
+            </code>
+
+        </div>
+
+        <a href="{{ site.baseurl }}/css/Meat/Box_model.html">
+                <div class="next_section_meat" id="css">
+                    <p>Next Section: The Box Model</p> <img class="arrow" src="/Images/Asset%201.svg">
+                </div>
+        </a>
+
+
+</div>
+
+
+{% endcontentfor %}
